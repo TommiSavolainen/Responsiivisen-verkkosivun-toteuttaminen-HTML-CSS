@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family:Verdana;
+    margin: 0;
+    background-color: darkgray;
+}
+  .header{
+    background-color: gray;
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+  }
+  .menu {
+    float: left;
+    width: 20%;
+    background-color: rgb(156, 156, 156);
+  }
+  .menuitem {
+    padding: 8px;
+    margin-top: 7px;
+    border-bottom: 1px solid #f1f1f1;
+    padding-left: 30px;
+    text-decoration: none;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+  a{
+    color: black;
+  }
+  .matala_taulukko {
+    height: 10px;
+  }
+  .taulukko{
+    border: 1px;
+    border-color: dimgrey;
+    border-style: solid;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+  }
+  #erivari{
+    background-color: darkgray;
+  }
+  td {
+    border: 1px;
+    border-color: dimgrey;
+    border-style: solid;
+    padding: 5px;
+  }
+  th {
+    padding: 5px;
+    border: 1px;
+    border-color: dimgrey;
+  }
+  .taulukko_rivi{
+    border: 1px;
+    border-color: dimgrey;
+    border-style: solid;
+  }
+  tr:nth-child(odd) {
+    background-color: #dddddd;
+  }
+  .sivu_otsikko{
+    width: 17%;
+    text-align: left;
+    padding: 5px;
+  }
+  .main {
+    float: left;
+    width: 80%;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: darkgrey;
+    margin-bottom: 50px;
+  }
+
+  
+  @media only screen and (max-width:800px) {
+    /* Tabletit: */
+    .menu, .main {
+      width: 100%;
+      padding: 0;
+    }
+
+  }
+  @media only screen and (max-width:500px) {
+    /* Puhelimet: */
+    .menu, .main {
+      width: 100%;
+      padding-left: 10px;
+    }
+  }
